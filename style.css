@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f0f3f8;
+    background-color: #e3e3f7;
 }
 
 .navbar {
@@ -24,7 +24,7 @@ body {
     width: 100%;
 }
 
-.nav__item {
+.button__primary {
     background-image: linear-gradient(
         to right,
         #ff512f 0%,
@@ -39,27 +39,156 @@ body {
     font-weight: 600;
 }
 
-.nav__item:hover {
+.button__primary:hover {
     background-position: right center;
     border: 2px solid #ff6767;
     cursor: pointer;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.hero__image__container {
+    width: 100%;
+
+}
+
+.hero__image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: -10px 25px 50px -8px rgba(40, 5, 5, 5);
+}
+
+.hero__text {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #1d3557;
+}
+
+.food__card__description {
+    padding: 15px;
+
+}
+
+.food__card__image__container {
+    width: 100%;
+}
+
+.food__image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.food__card {
+    background-color: #f9f9f9;
+    
+}
+
+.explore__menu__text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1d3557;
+
+}
+
+#pizza__card {
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 780px) {
     .navbar {
         justify-content: space-between;
         padding: 10px 30px;
+
+    }
+
+    .explore__menu__container {
+        position: relative;
+    }
+
+    
+    
+
+    .hero__container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .explore__menu__gradient__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -3;
+        transform: skewY(-5deg);
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        );
     }
 }
 
-@media (min-width: 1114px) {
+@media (min-width: 1025px) {
+    .container{
+        max-width: 70%;
+        
+    }
     .navbar__brand {
         width: 130px;
 
     }
-    .nav__item {
+    .button__primary {
         padding: 18px;
         font-size: 16px;
+
+    }
+
+    .hero__description {
+        width: 100%;
+
+    }
+    .hero__text {
+        font-size: 45px;
+    }
+
+    .explore__menu__lists {
+        display: flex;
+        padding: 0px 30px;
+        gap: 25px;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+    .explore__menu__text {
+        font-size: 48px;
+    }
+
+    .explore__menu__gradient__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+        );
+
 
     }
     
